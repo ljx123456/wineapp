@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main"
+    tools:context=".ui.main.activity.MainActivity">
+    <yongchao.com.wineapp.utils.view.MyViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_main"></yongchao.com.wineapp.utils.view.MyViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_home">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableTop="@mipmap/tabbar_homepage_sel"
+                android:drawablePadding="4dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="首页"
+                android:textColor="#D3AA71"
+                android:textSize="12dp"
+                android:id="@+id/tv_home"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_type">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableTop="@mipmap/tabbar_classification_nor"
+                android:drawablePadding="4dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="分类"
+                android:textColor="#CCCCCC"
+                android:textSize="12dp"
+                android:id="@+id/tv_type"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--&gt;-->
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_order">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableTop="@mipmap/tabbar_order_nor"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="订单"
+                android:textColor="#CCCCCC"
+                android:textSize="12dp"
+                android:id="@+id/tv_order"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout_mine">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableTop="@mipmap/tabbar_mine_nor"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="我"
+                android:textColor="#CCCCCC"
+                android:textSize="12dp"
+                android:id="@+id/tv_mine"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

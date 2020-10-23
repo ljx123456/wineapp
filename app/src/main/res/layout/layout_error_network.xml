@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/noNetworkView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/no_wifi"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="183dp" />
+
+    <TextView
+        android:id="@+id/workTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noNetworkView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:text="暂无网络"
+        android:textColor="#40000000"
+        android:textSize="14dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workTextView"
+        android:layout_gravity="center_horizontal"
+        android:text="轻触屏幕重新加载"
+        android:textColor="#73000000"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/anewClick"
+        android:layout_width="94dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/workTextView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/btn_order_pay_bg"
+
+        android:gravity="center"
+        android:text="刷新一下"
+        android:textColor="#fff"
+        android:visibility="visible"/>
+</LinearLayout>

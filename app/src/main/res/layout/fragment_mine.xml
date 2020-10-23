@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:background="#222222">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="我的主页"-->
+            <!--android:textColor="#ffffffff"-->
+            <!--android:textSize="16dp"/>-->
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:riv_corner_radius="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/iv_user"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="128dp"
+            android:layout_centerHorizontal="true"
+            android:text="1849231"
+            android:textColor="#ffffffff"
+            android:textSize="16dp"
+            android:id="@+id/tv_id"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/layout_mine_card_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="成为经销商"
+                android:textColor="#ff555555"
+                android:textSize="13dp"
+                android:id="@+id/tv_role"/>
+
+            <TextView
+                android:layout_width="78dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/tv_mine_bg"
+                android:gravity="center"
+                android:text="联系我们"
+                android:textColor="#ffd3aa71"
+                android:textSize="13dp"
+                android:id="@+id/tv_phone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="197dp"
+        android:background="@mipmap/mine_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="44dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/mine_button_receivingaddress"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="收货地址"
+                android:textColor="#ff555555"
+                android:textSize="12dp"
+                android:id="@+id/tv_address"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#1a000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/mine_button_collection"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="我的收藏"
+                android:textColor="#ff555555"
+                android:textSize="12dp"
+                android:id="@+id/tv_collect"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#1a000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/mine_button_customerservice"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="联系客服"
+                android:textColor="#ff555555"
+                android:textSize="12dp"
+                android:id="@+id/tv_service"/>
+
+            
+
+        </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#1a000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/mine_button_setting"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="#ff555555"
+                android:textSize="12dp"
+                android:id="@+id/tv_set"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#1a000000"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/mine_button_data"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:text="销售数据"
+                    android:textColor="#ff555555"
+                    android:textSize="12dp"
+                    android:id="@+id/tv_data"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#1a000000"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

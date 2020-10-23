@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:src="@mipmap/tabbar_button_back"
+            android:scaleType="centerInside"
+            android:id="@+id/back"/>
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="52dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+
+            app:xTabMode="fixed"
+            app:xTabDisplayNum="6"
+            android:background="#FFFFFF"
+            app:xTabIndicatorColor="#D3AA71"
+            app:xTabIndicatorHeight="2dp"
+            app:xTabIndicatorWidth="20dp"
+            app:xTabSelectedTextColor="#D3AA71"
+            app:xTabSelectedTextSize="16dp"
+
+            app:xTabTextColor="#888888"
+            app:xTabTextSize="13dp"
+            app:xTabTextSelectedBold="true"
+            app:xTabTextBold="false"/>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_centerHorizontal="true">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:drawableBottom="@mipmap/navbar_icon_sel"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="商品"-->
+                <!--android:textColor="#ffd3aa71"-->
+                <!--android:textSize="16dp"-->
+                <!--android:id="@+id/tv_title_goods"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="评价"-->
+                <!--android:textColor="#ff888888"-->
+                <!--android:textSize="13dp"/>-->
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="375dp">
+                <yongchao.com.wineapp.ui.image.CustomViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/vp_goods"></yongchao.com.wineapp.ui.image.CustomViewPager>
+
+                <TextView
+                    android:id="@+id/tv_goods_page_num"
+                    android:layout_width="32dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/tv_goods_page_bg"
+                    android:gravity="center"
+                    android:text="1/6"
+                    android:textColor="#ffffffff"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="30dp"
+                    android:text="¥ "
+                    android:textColor="#fff61c1c"
+                    android:textSize="17dp"
+                    android:id="@+id/tv1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv1"
+                    android:layout_alignBaseline="@+id/tv1"
+                    android:text="21.30"
+                    android:textColor="#fff61c1c"
+                    android:textSize="24dp"
+                    android:id="@+id/tv_price"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_price"
+                    android:layout_marginLeft="4dp"
+                    android:layout_alignBaseline="@+id/tv_price"
+                    android:text=" ¥ 32.80"
+                    android:textColor="#ff888888"
+                    android:textSize="12dp"
+                    android:id="@+id/tv_original_price"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="13dp"
+                android:text="1664 白啤酒法国经典小麦嘉士伯官方精酿"
+                android:textColor="#ff222222"
+                android:textSize="16dp"
+                android:id="@+id/tv_goods_name"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="规格"
+                    android:textColor="#ff888888"
+                    android:textSize="13dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="500ml*1罐"
+                    android:textColor="#ff222222"
+                    android:textSize="13dp"
+                    android:id="@+id/tv_unit"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="23.5dp"
+                android:background="#1a000000"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="配送"
+                    android:textColor="#ff888888"
+                    android:textSize="13dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="承诺成都三环内当日送达！"
+                    android:textColor="#ff222222"
+                    android:textSize="13dp"
+                    android:id="@+id/tv_express"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="运费"
+                    android:textColor="#ff888888"
+                    android:textSize="13dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="该品种酒类暂不收取配送费"
+                    android:textColor="#ff222222"
+                    android:textSize="13dp"
+                    android:id="@+id/tv_freight"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="服务"
+                    android:textColor="#ff888888"
+                    android:textSize="13dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:drawableRight="@mipmap/page_more_arrow_right"
+                    android:text="假一赔十 · 破损无忧"
+                    android:textColor="#ff222222"
+                    android:textSize="13dp"
+                    android:id="@+id/tv_service"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="23.5dp"
+                android:background="#1a000000"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:id="@+id/layout_comment">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="评价"
+                    android:textColor="#ff222222"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:text="查看全部"
+                    android:textColor="#ff888888"
+                    android:textSize="13dp"
+                    android:drawableRight="@mipmap/page_more_arrow_right"
+                    android:id="@+id/tv_comment"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#1a000000"/>
+            </RelativeLayout>
+
+            <yongchao.com.wineapp.utils.view.MyRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recy_comment"></yongchao.com.wineapp.utils.view.MyRecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="23.5dp"
+                android:background="#1a000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:textStyle="bold"
+                android:text="详情"
+                android:textColor="#ff222222"
+                android:textSize="16dp"
+                android:id="@+id/tv_details"/>
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1000dp"-->
+                <!--android:id="@+id/recy_goods_image"></android.support.v7.widget.RecyclerView>-->
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/web"></WebView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

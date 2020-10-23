@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="161dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_camera"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="拍摄"
+            android:textColor="#222222"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#1a000000"></View>
+
+        <TextView
+            android:id="@+id/dialog_photo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="相册"
+            android:textColor="#222222"
+            android:textSize="16dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialogOver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="12dp"
+        android:textStyle="bold"
+        android:text="取消"
+        android:textColor="#F61C1C"
+        android:textSize="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/edit_search_bg"
+            android:drawableLeft="@mipmap/searchpage_box_icon"
+            android:paddingLeft="8dp"
+            android:drawablePadding="8dp"
+            android:theme="@style/inputStyle"
+            android:textColorHint="#888888"
+            android:textColor="#ff222222"
+            android:textSize="14dp"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:id="@+id/edit_search"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="取消"
+            android:textColor="#ffd3aa71"
+            android:textSize="14dp"
+            android:id="@+id/tv_cancel"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+
+        android:id="@+id/recy"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

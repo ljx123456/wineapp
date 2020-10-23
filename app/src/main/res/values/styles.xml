@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowDisablePreview">true</item>-->
+    </style>
+
+    <style name="inputStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 底部线 默认颜色 -->
+        <item name="android:colorControlNormal">#CCCCCC</item>
+        <!-- 底部线 EditText激活时颜色 -->
+        <item name="android:colorControlActivated">#222222</item>
+        <item name="android:colorAccent">#222222</item>
+        <!-- 设置光标 -->
+        <item name="android:textCursorDrawable">@drawable/edit_cursor</item>
+    </style>
+
+    <style name="MyNewAlertDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/cb_bg</item>
+    </style>
+
+    <style name="CustomAllCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/cb_all_bg</item>
+    </style>
+
+    <style name="SingleChooseTag">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="item_textColor">#888888</item>//选项item文字默认值
+        <item name="item_backgroundColor">#fff</item>//选项item背景色
+        <item name="item_selectedTextColor">#D3AA71</item>选中后选项item的文字颜色
+        <item name="item_selectedBackgroundColor">#fff</item>选中后选项item的背景颜色
+        <item name="item_radius">2dp</item>
+        <item name="item_strokeColor">#40888888</item>选项item的边缘颜色
+        <item name="item_selectedStrokeColor">#D3AA71</item>选项item选中后边缘颜色
+        <item name="item_strokeWidth">1dp</item>选项item边缘的大小
+        <item name="item_horizontalSpacing">12dp</item>
+        <item name="item_verticalSpacing">12dp</item>
+        <!--这里设置固定大小,padding为0-->
+        <item name="item_horizontalPadding">16dp</item>
+        <item name="item_verticalPadding">8dp</item>
+        <!--单位dp-->
+        <item name="item_width">wrap_content</item>
+        <item name="item_height">wrap_content</item>
+        <!--限制tag显示长度,规则查看Textview-->
+        <item name="item_maxEms">5</item>
+        <!--单选-->
+        <item name="item_multiChooseable">false</item>
+        <item name="item_click">true</item>
+    </style>
+
+
+</resources>

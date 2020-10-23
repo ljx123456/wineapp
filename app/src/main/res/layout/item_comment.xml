@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="21dp"
+    android:layout_marginBottom="11dp"
+    android:background="#fff">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        app:riv_corner_radius="16dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/iv_head"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_head"
+        android:layout_marginLeft="16dp"
+        android:text="_Fahaxiki"
+        android:textColor="#ff222222"
+        android:textSize="14dp"
+        android:id="@+id/tv_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignBaseline="@+id/tv_name"
+        android:text="2020-02-21"
+        android:textColor="#ff888888"
+        android:textSize="11dp"
+        android:id="@+id/tv_time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="16dp"
+        android:maxLines="3"
+        android:text="非常满意，非常满意，非常满意，非常满意，非常满意，非常满意，非常满意，非常满意，非常满意，非常满意。"
+        android:textColor="#ff555555"
+        android:textSize="14dp"
+        android:id="@+id/tv_comment"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/tv_comment"
+        android:layout_marginTop="16dp"
+        android:id="@+id/recy"
+        android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
